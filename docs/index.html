@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research Network</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600&family=Inter:wght@400;500&display=swap">
+<style>
+:root { --bg: #f3f6f7; --surface: #ffffff; --fg: #15212b; --muted: #5a6873; --line: #d6dee3; --accent: #1d6a87;
+  --display: 'Space Grotesk', 'Helvetica Neue', Arial, sans-serif; --body: 'Inter', system-ui, -apple-system, sans-serif; }
+@media (prefers-color-scheme: dark) { :root { --bg: #0e1418; --surface: #151d22; --fg: #e3e9ed; --muted: #93a2ad; --line: #26333b; --accent: #62b6d4; color-scheme: dark; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 var(--body); }
+main { max-width: 44rem; margin: 0 auto; padding: 64px 20px; display: grid; gap: 28px; }
+h1 { font-family: var(--display); font-weight: 600; font-size: 2.2rem; letter-spacing: -.01em; margin: 0; }
+p { margin: 0; color: var(--muted); }
+h2 { font-size: .75rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 0 0 10px; }
+ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+a.card { display: grid; gap: 2px; padding: 14px 16px; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; color: var(--fg); text-decoration: none; }
+a.card:hover, a.card:focus-visible { border-color: var(--accent); outline: none; }
+a.card strong { font-family: var(--display); font-weight: 500; color: var(--accent); }
+a.card span { font-size: .9rem; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Research Network</h1>
+    <p>Maps of who works with whom, and what connects the research I read.</p>
+  </header>
+  <section>
+    <h2>Projects</h2>
+    <ul>
+      <li><a class="card" href="https://eeporter.github.io/zotero-author-network/">
+        <strong>Zotero co-author network</strong>
+        <span>1,686 authors from my Zotero library, linked by shared papers.</span></a></li>
+    </ul>
+  </section>
+</main>
+</body>
+</html>
